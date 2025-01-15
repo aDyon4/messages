@@ -8,7 +8,7 @@ import Login from './pages/Login.jsx'
 import Notfound from './pages/Notfound.jsx'
 
 import { initializeApp } from "firebase/app";
-import { firebaseConfig } from "./firebaseConfig.js";
+import { firebaseConfig } from "../firebaseConfig.js";
 import { getFirestore } from "firebase/firestore";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useState } from 'react'
@@ -36,7 +36,7 @@ export default function App() {
   const router = createBrowserRouter([
     {path: "/", element: <Layout user={user} logout={logout} />, children:[
       {path: "/", element: <Messages user={user} db={db} />},
-      {path: "/users", element: <Users />},
+      {path: "/users", element: <Users db={db} />},
       {path: "/about", element: <About />},
       {path: "/login", element: <Login auth={auth} setUser={setUser} />},
       {path: "/*", element: <Notfound />}
