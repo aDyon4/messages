@@ -23,8 +23,12 @@ export default function Login({auth, setUser}) {
     }
   }
 
+  function eneter(e){
+    if(e.key === 'Enter') login();
+  }
+
   return (
-    <div className='login'>
+    <div className='login' onKeyDown={e => eneter(e)}>
       <TextField
         error={loginError}
         required

@@ -18,6 +18,7 @@ export default function Layout({user, logout}) {
         </ButtonGroup>
         {user ?
           <div className='email'>
+            <Link to="/admin"><Button className='admin' variant={pathname == "/admin" ?  "outlined" : "contained"}>Admin</Button></Link>
             <Chip label={user.email} variant='contained'/>
             <Button variant='contained' onClick={logout}>Logout</Button>
           </div>
