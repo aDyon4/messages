@@ -1,0 +1,57 @@
+.app {
+  width: 90%; margin: 0px auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.menu Button {
+  text-transform: none;
+  background-color: none;
+}
+.menu #buttonBg { background-color: none; }
+
+.page {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.menu {
+  display: flex; justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu .login{
+  display: flex; gap: 10px
+}
+.menu Button{
+  text-transform: none;
+}
+
+.login {
+  display: flex; gap: 15px;
+  flex-direction: column;
+}
+.login Button {
+  text-transform: none;
+  width: 100px;
+}
+
+.email{
+  display: flex;
+  gap: 15px;
+}
+
+.menu Button, .uzenet Button{
+  text-transform: none;
+}
+
+.uzenet{
+  display: flex;
+  gap: 10px;
+}
