@@ -48,7 +48,7 @@ export default function App() {
       {path: "/login", element: <Login auth={auth} setUser={setUser} />},
       {path: "/*", element: <Notfound />}
     ]}
-  ]);
+  ], { basename: '/messages/' } );
   
 
   return (
